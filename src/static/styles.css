@@ -95,13 +95,30 @@ section h3 {
 
 .activity-card ul {
   margin-top: 12px;
-  padding-left: 20px;
-  list-style-type: disc;
-  color: #424242; /* Texto secundário */
+  padding: 16px; /* Espaçamento interno */
+  list-style-type: none; /* Remove marcadores padrão */
+  background-color: #f5f5f5; /* Fundo claro */
+  border-radius: 8px; /* Bordas arredondadas */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
 }
 
 .activity-card ul li {
-  margin-bottom: 6px;
+  margin-bottom: 8px;
+  padding: 8px 12px; /* Espaçamento interno */
+  background-color: #ffffff; /* Fundo branco */
+  border-radius: 6px; /* Bordas arredondadas */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Sombra leve */
+  color: #424242; /* Texto secundário */
+  font-weight: 500; /* Peso do texto */
+  display: flex;
+  align-items: center;
+  gap: 8px; /* Espaçamento entre ícones e texto */
+}
+
+.activity-card ul li::before {
+  content: "👤"; /* Ícone de participante */
+  font-size: 16px;
+  color: #6200ea; /* Roxo Material Design */
 }
 
 .form-group {
